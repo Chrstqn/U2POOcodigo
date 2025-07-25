@@ -30,4 +30,15 @@ public class Documental extends ContenidoAudiovisual {
         System.out.println("Investigador: " + (investigador != null ? investigador.getNombre() : "No especificado"));
         System.out.println("");
     }
+
+	public String getDirector() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected char[] getEpisodios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

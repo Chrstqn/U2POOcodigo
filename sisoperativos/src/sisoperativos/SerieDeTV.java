@@ -33,4 +33,14 @@ public class SerieDeTV extends ContenidoAudiovisual {
         System.out.println("Temporadas: " + (listaTemporadas.isEmpty() ? "No hay temporadas" : listaTemporadas.stream().map(t -> "Temporada " + t.getNumeroTemporada() + " (" + t.getNumeroEpisodios() + " episodios)").reduce((a, b) -> a + ", " + b).orElse("")));
         System.out.println("");
     }
+
+	public String getDirector() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	public char[] getEpisodios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

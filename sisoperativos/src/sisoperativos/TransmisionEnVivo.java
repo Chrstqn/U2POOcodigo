@@ -30,4 +30,10 @@ public class TransmisionEnVivo extends ContenidoAudiovisual {
         System.out.println("Espectadores: " + espectadores);
         System.out.println("");
     }
+
+	@Override
+	protected char[] getEpisodios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

@@ -30,4 +30,15 @@ public class GameplayComentado extends ContenidoAudiovisual {
         System.out.println("Comentarista: " + comentarista);
         System.out.println("");
     }
+
+	public String getDirector() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected char[] getEpisodios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

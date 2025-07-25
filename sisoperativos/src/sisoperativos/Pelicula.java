@@ -33,4 +33,15 @@ public class Pelicula extends ContenidoAudiovisual {
         System.out.println("Actores: " + (actores.isEmpty() ? "No hay actores" : actores.stream().map(Actor::getNombre).reduce((a, b) -> a + ", " + b).orElse("")));
         System.out.println("");
     }
+
+	public String getDirector() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	protected char[] getEpisodios() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }

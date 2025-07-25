@@ -1,6 +1,8 @@
 package DeberU2;
 
 import sisoperativos.Actor;
+import sisoperativos.ArchivoContenidoManager;
+import sisoperativos.ContenidoAudiovisual;
 import sisoperativos.Documental;
 import sisoperativos.GameplayComentado;
 import sisoperativos.Investigador;
@@ -9,9 +11,46 @@ import sisoperativos.SerieDeTV;
 import sisoperativos.Temporada;
 import sisoperativos.TransmisionEnVivo;
 
+import java.util.ArrayList; // Importa ArrayList
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
-        // Crear un investigador
+        // Crear una instancia de ArchivoContenidoManager
+        ArchivoContenidoManager manager = new ArchivoContenidoManager();
+
+        // Leer contenido desde el archivo CSV
+        List<ContenidoAudiovisual> contenidos = manager.leerContenido("contenido.csv");
+
+        // Asegurarse de que la lista no sea null antes de iterar
+        if (contenidos != null) {
+            // Procesar la lista de contenidos y mostrar detalles
+            for (ContenidoAudiovisual contenido : contenidos) {
+                if (contenido instanceof Documental) {
+                    Documental documental = (Documental) contenido;
+                    documental.mostrarDetalles(); // Mostrar detalles del documental
+                } else if (contenido instanceof Pelicula) {
+                    Pelicula pelicula = (Pelicula) contenido;
+                    pelicula.mostrarDetalles(); // Mostrar detalles de la película
+                } else if (contenido instanceof SerieDeTV) {
+                    SerieDeTV serie = (SerieDeTV) contenido;
+                    serie.mostrarDetalles(); // Mostrar detalles de la serie
+                } else if (contenido instanceof TransmisionEnVivo) {
+                    TransmisionEnVivo transmision = (TransmisionEnVivo) contenido;
+                    transmision.mostrarDetalles(); // Mostrar detalles de la transmisión
+                } else if (contenido instanceof GameplayComentado) {
+                    GameplayComentado gameplay = (GameplayComentado) contenido;
+                    gameplay.mostrarDetalles(); // Mostrar detalles del gameplay comentado
+                }
+                // Puedes agregar más tipos de contenido aquí si es necesario
+            }
+        } else {
+            System.out.println("No se pudo leer el contenido del archivo o el archivo no existe.");
+            // Puedes agregar un manejo de error más robusto aquí, como crear una lista vacía o salir del programa.
+            contenidos = new ArrayList<>(); // Inicializa la lista con una lista vacía para evitar errores posteriores
+        }
+
+        // Ejemplo de cómo crear un investigador y otros contenidos manualmente
         Investigador investigador = new Investigador("Jane Doe", "Crimen y suspenso");
 
         // Crear un documental

@@ -34,4 +34,6 @@ public abstract class ContenidoAudiovisual {
 
     // Método abstracto para mostrar detalles en subclases
     public abstract void mostrarDetalles();
+
+	protected abstract char[] getEpisodios();
 }
