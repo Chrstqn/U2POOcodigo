@@ -69,14 +69,19 @@ Importar el proyecto en tu IDE:
 Eclipse:
 
 •	Ve a File > Import...
+
 •	Selecciona Existing Projects into Workspace y haz clic en Next.
+
 •	Haz clic en Browse... y selecciona la carpeta donde clonaste el repositorio.
+
 •	Haz clic en Finish.
 
 IntelliJ IDEA:
 
 •	Ve a File > Open...
+
 •	Selecciona la carpeta donde clonaste el repositorio y abre el archivo pom.xml (si usas Maven) o el archivo build.gradle (si usas Gradle).
+
 •	IntelliJ IDEA detectará automáticamente el proyecto y lo importará.
 
 Otros IDEs: Sigue las instrucciones específicas de tu IDE para importar un proyecto existente. Generalmente, buscarás una opción como "Import Project" o "Open Project" y seleccionarás la carpeta raíz del proyecto.
@@ -84,30 +89,39 @@ Otros IDEs: Sigue las instrucciones específicas de tu IDE para importar un proy
 Ejecutar la aplicación:
 
 •	En tu IDE, busca la clase principal de tu aplicación (generalmente, una clase con un método main()).
+
 •	Haz clic derecho en esa clase y selecciona "Run As" o "Ejecutar como" y luego "Java Application". Esto ejecutará tu aplicación.
+
 Alternativamente, puedes usar la terminal:
+
 •	Navega a la carpeta raíz de tu proyecto.
+
 •	Usa el comando java -cp .:/ruta/a/tus/librerias/ (si usas librerias externas) nombre.de.la.clase.Principal (reemplaza nombre.de.la.clase.Principal con el nombre completo de la clase principal, incluyendo el paquete).
+
 •	Ejecutar las pruebas unitarias:
 
 Eclipse:
 
 •	Haz clic derecho en el proyecto y selecciona Run As > JUnit Test.
+
 •	También puedes hacer clic derecho en una clase de prueba individual y seleccionar Run As > JUnit Test.
 
 IntelliJ IDEA:
 
 •	Haz clic derecho en el proyecto y selecciona Run Tests o Run 'All Tests'.
+
 •	También puedes hacer clic derecho en una clase de prueba individual y seleccionar Run.
 
 Desde la línea de comandos (Maven):
 
 •	Navega a la carpeta raíz de tu proyecto.
+
 •	Ejecuta el comando mvn test.
 
 Desde la línea de comandos (Gradle):
 
 •	Navega a la carpeta raíz de tu proyecto.
+
 •	Ejecuta el comando ./gradlew test (en Linux/macOS) o gradlew test (en Windows).
 
 Autor:
