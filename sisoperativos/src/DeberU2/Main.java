@@ -1,18 +1,18 @@
 package DeberU2;
 
-import sisoperativos.Actor;
-import sisoperativos.ArchivoContenidoManager;
-import sisoperativos.ContenidoAudiovisual;
-import sisoperativos.Documental;
-import sisoperativos.GameplayComentado;
-import sisoperativos.Investigador;
-import sisoperativos.Pelicula;
-import sisoperativos.SerieDeTV;
-import sisoperativos.Temporada;
-import sisoperativos.TransmisionEnVivo;
-
 import java.util.ArrayList; // Importa ArrayList
 import java.util.List;
+
+import metodos_clases.Actor;
+import metodos_clases.ArchivoContenidoManager;
+import metodos_clases.ContenidoAudiovisual;
+import metodos_clases.Documental;
+import metodos_clases.GameplayComentado;
+import metodos_clases.Investigador;
+import metodos_clases.Pelicula;
+import metodos_clases.SerieDeTV;
+import metodos_clases.Temporada;
+import metodos_clases.TransmisionEnVivo;
 
 public class Main {
     public static void main(String[] args) {

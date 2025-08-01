@@ -1,4 +1,4 @@
-package sisoperativos;
+package metodos_clases;
 
 public class Documental extends ContenidoAudiovisual {
     private String tema;

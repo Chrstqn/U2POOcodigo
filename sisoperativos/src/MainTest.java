@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Test;
-import sisoperativos.*;
+
+import metodos_clases.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 

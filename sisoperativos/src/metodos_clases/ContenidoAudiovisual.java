@@ -1,4 +1,4 @@
-package sisoperativos;
+package metodos_clases;
 
 // Clase base abstracta ContenidoAudiovisual
 public abstract class ContenidoAudiovisual {

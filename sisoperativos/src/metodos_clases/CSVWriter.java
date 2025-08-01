@@ -1,4 +1,4 @@
-package sisoperativos;
+package metodos_clases;
 
 import java.io.FileWriter;
 import java.io.IOException;

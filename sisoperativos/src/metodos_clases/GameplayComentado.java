@@ -1,4 +1,4 @@
-package sisoperativos;
+package metodos_clases;
 
 public class GameplayComentado extends ContenidoAudiovisual {
     private String juego;

@@ -1,4 +1,4 @@
-package sisoperativos;
+package metodos_clases;
 
 import com.opencsv.CSVWriter; // Importa la clase CSVWriter de opencsv
 import java.io.FileWriter;

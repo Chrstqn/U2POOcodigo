@@ -1,4 +1,4 @@
-package sisoperativos;
+package metodos_clases;
 
 public class Investigador {
     private String nombre;
